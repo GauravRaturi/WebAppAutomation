@@ -10,6 +10,9 @@ phases:
       - docker-compose up -d
   build:
     commands:
+      - apt-get update -y
+      - apt-get install -y maven
+      - mvn install
       - mvn test
 reports:
   Selenium:
