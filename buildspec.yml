@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - sudo docker-compose up -d
+      - sudo docker-compose up
   build:
     commands:
       - mvn test
